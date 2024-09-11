@@ -2,6 +2,7 @@ package ru.geekbrains.java_core3.lessons.l1_generics.hw_generics;
 
 import java.util.ArrayList;
 import java.util.List;
+//
 
 public class FruitBox <F extends Fruit> {
     private ArrayList<F> fruits;
