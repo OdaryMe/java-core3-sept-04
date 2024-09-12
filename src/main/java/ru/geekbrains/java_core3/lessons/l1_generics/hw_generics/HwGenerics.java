@@ -3,7 +3,7 @@ package ru.geekbrains.java_core3.lessons.l1_generics.hw_generics;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-//lllll
+
 public class HwGenerics {
     public static void main(String[] args) {
         String[] gadgets = {"Laptop", "Phone", "Tablet", "Player"};

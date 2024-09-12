@@ -1,5 +1,4 @@
 package ru.geekbrains.java_core3.lessons.l1_generics.hw_generics;
-//
 
 public class Orange extends Fruit {
 

@@ -2,7 +2,6 @@ package ru.geekbrains.java_core3.lessons.l1_generics.hw_generics;
 
 import java.util.ArrayList;
 import java.util.List;
-//
 
 public class FruitBox <F extends Fruit> {
     private ArrayList<F> fruits;
@@ -17,8 +16,8 @@ public class FruitBox <F extends Fruit> {
 
     @Override
     public String toString() {
-        return "FruitBox{" +
-                "fruits=" + fruits +
+        return "FruitBox {" +
+                "fruits = " + fruits +
                 '}';
     }
 
@@ -31,7 +30,11 @@ public class FruitBox <F extends Fruit> {
     }
 
     public void moveFruitsToFrom(FruitBox<F> another) {
-        this.fruits.addAll(another.fruits);
-        another.fruits.removeAll(another.fruits);
+        if(this.fruits == another.fruits) {
+            System.out.println("You are trying to move the box into itself");
+        } else {
+            this.fruits.addAll(another.fruits);
+            another.fruits.removeAll(another.fruits);
+        }
     }
 }
